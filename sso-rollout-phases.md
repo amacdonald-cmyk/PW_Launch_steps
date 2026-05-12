@@ -74,10 +74,6 @@
   - Existing user with TNTN token → straight through, no friction
   - Net-new user → account creation + TNTN token issued as part of order flow
   - Edge case PW-only user → graceful fallback with password reset prompt
-- Open questions before launch:
-  - [ ] Error state if TNTN validation fails mid-checkout?
-  - [ ] Does a completed order write back to Omeda's customer record?
-  - [ ] Are these replacing existing forms or launching for new products only?
 
 #### 4b — Archive website
 - New Archive site launches with TNTN auth integrated end-to-end
