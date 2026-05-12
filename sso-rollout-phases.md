@@ -48,7 +48,7 @@
 ## Phase details
 
 ### Phase 1 — User migration
-- Batch migrate all Omeda customer records that have a PW auth token to also carry a TNTN token
+- Batch migrate all Omeda customer records that have a PW auth token to a TNTN token
 - Passwords are **not** changed or invalidated
 - This is a backend-only operation with no user-facing impact
 - **Dependency:** Must complete before Phase 2 begins
@@ -57,7 +57,6 @@
 - All active order forms, login forms, and registration flows updated to:
   - Issue a TNTN token on successful auth (not a PW token)
   - Validate against TNTN token (not PW token)
-- Edge case handling required for users with only a PW token (graceful fallback → password reset prompt)
 - **Dependency:** Phase 1 complete
 
 ### Phase 3 — User communication
